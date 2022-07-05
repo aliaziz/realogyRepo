@@ -1,5 +1,4 @@
-# Assignment 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/aliaziz/realogyRepo/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/aliaziz/realogyRepo/tree/master)
+# Project Build Status [![CircleCI](https://dl.circleci.com/status-badge/img/gh/aliaziz/realogyRepo/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/aliaziz/realogyRepo/tree/master)
 
 
 ## Table of contents
