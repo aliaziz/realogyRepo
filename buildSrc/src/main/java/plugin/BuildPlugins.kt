@@ -8,6 +8,5 @@ object BuildPlugins {
 
     const val HILT_PLUGIN = "dagger.hilt.android.plugin"
 
-    const val NAVIGATION_SAFE_ARGS = "androidx.navigation.safeargs.kotlin"
     const val SERIALIZER = "plugin.serialization"
 }

@@ -5,7 +5,7 @@
     android:id="@+id/item_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ItemDetailHostActivity"
+    tools:context=".HomeActivity"
     tools:ignore="MergeRootFrame">
 
     <ImageView
@@ -30,6 +30,6 @@
         android:paddingEnd="@dimen/container_horizontal_margin"
         android:paddingBottom="16dp"
         android:textIsSelectable="true"
-        tools:context="com.aliziwa.realogyassignment.ItemDetailFragment" />
+        tools:context="com.aliziwa.realogyassignment.CharacterDetailFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,29 +3,15 @@ package com.aliziwa.realogyassignment.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.aliziwa.domain.entity.QueryData
 import com.aliziwa.domain.usecase.GetCharacterUseCase
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
-import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
-@kotlinx.serialization.Serializable
-sealed class UIState {
-    @Serializable
-    object Loading : UIState()
-
-    @Serializable
-    data class Error(val message: String) : UIState()
-
-    @Serializable
-    data class Success(val data: List<QueryData>) : UIState()
-}
-
-class ItemListViewModel @Inject constructor(
+class CharacterViewModel @Inject constructor(
     private val getCharacterUseCase: GetCharacterUseCase
 ) : ViewModel() {
 

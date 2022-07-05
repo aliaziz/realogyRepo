@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aliziwa.domain.entity.QueryData
 import com.aliziwa.realogyassignment.databinding.ItemListContentBinding
 
-class ItemViewAdapter(
+class CharacterViewAdapter(
     private val values: List<QueryData>,
     private val itemDetailFragmentContainer: View?
 ) :
-    RecyclerView.Adapter<ItemViewAdapter.ViewHolder>() {
+    RecyclerView.Adapter<CharacterViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
@@ -34,7 +34,7 @@ class ItemViewAdapter(
             setOnClickListener { itemView ->
                 val bundle = Bundle()
                 bundle.putSerializable(
-                    ItemDetailFragment.QUERY_DATA,
+                    CharacterDetailFragment.QUERY_DATA,
                     item
                 )
                 if (itemDetailFragmentContainer != null) {

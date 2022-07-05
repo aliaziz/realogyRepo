@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.aliziwa.data.datasource.QueryImplementation
 import com.aliziwa.domain.repository.CharacterQueryRepository
-import com.aliziwa.realogyassignment.viewmodel.ItemListViewModel
+import com.aliziwa.realogyassignment.viewmodel.CharacterViewModel
 import com.aliziwa.realogyassignment.viewmodel.ViewModelFactory
 import dagger.Binds
 import dagger.Module
@@ -25,6 +25,6 @@ abstract class AppModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(ItemListViewModel::class)
-    abstract fun getItemListViewModel(itemListViewModel: ItemListViewModel): ViewModel
+    @ViewModelKey(CharacterViewModel::class)
+    abstract fun getItemListViewModel(characterViewModel: CharacterViewModel): ViewModel
 }

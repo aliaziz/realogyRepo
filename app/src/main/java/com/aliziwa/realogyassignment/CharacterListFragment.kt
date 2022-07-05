@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.aliziwa.domain.entity.QueryData
 import com.aliziwa.realogyassignment.databinding.FragmentItemListBinding
-import com.aliziwa.realogyassignment.viewmodel.ItemListViewModel
+import com.aliziwa.realogyassignment.viewmodel.CharacterViewModel
 import com.aliziwa.realogyassignment.viewmodel.UIState
 import com.aliziwa.realogyassignment.viewmodel.ViewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
@@ -18,7 +18,7 @@ import java.lang.IllegalStateException
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ItemListFragment : Fragment() {
+class CharacterListFragment : Fragment() {
     private var _binding: FragmentItemListBinding? = null
 
     private val binding get() = _binding!!
@@ -27,12 +27,12 @@ class ItemListFragment : Fragment() {
     @Inject
     lateinit var viewModelFactory: ViewModelFactory
 
-    private lateinit var itemListViewModel: ItemListViewModel
+    private lateinit var characterViewModel: CharacterViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        itemListViewModel =
-            ViewModelProvider(this, viewModelFactory).get(ItemListViewModel::class.java)
+        characterViewModel =
+            ViewModelProvider(this, viewModelFactory).get(CharacterViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -53,15 +53,15 @@ class ItemListFragment : Fragment() {
         if (savedInstanceState != null) {
             savedInstanceState.getString(currentState)?.let {  restoredState ->
                 updateUIWithState(
-                    itemListViewModel.fromStringToState(restoredState),
+                    characterViewModel.fromStringToState(restoredState),
                     recyclerView,
                     itemDetailFragmentContainer
                 )
             }
         } else {
-            itemListViewModel.fetchQuery()
+            characterViewModel.fetchQuery()
         }
-        itemListViewModel.data.observe(viewLifecycleOwner) { state ->
+        characterViewModel.data.observe(viewLifecycleOwner) { state ->
             updateUIWithState(state, recyclerView, itemDetailFragmentContainer)
         }
     }
@@ -102,14 +102,14 @@ class ItemListFragment : Fragment() {
         itemDetailFragmentContainer: View?
     ) {
 
-        recyclerView.adapter = ItemViewAdapter(
+        recyclerView.adapter = CharacterViewAdapter(
             queryData, itemDetailFragmentContainer
         )
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putSerializable(currentState, itemListViewModel.stateToString())
+        outState.putSerializable(currentState, characterViewModel.stateToString())
     }
 
     override fun onDestroyView() {

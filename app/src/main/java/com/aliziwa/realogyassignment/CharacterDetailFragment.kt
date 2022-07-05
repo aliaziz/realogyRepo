@@ -13,7 +13,7 @@ import com.aliziwa.realogyassignment.databinding.FragmentItemDetailBinding
 import com.bumptech.glide.Glide
 import com.google.android.material.appbar.CollapsingToolbarLayout
 
-class ItemDetailFragment : Fragment() {
+class CharacterDetailFragment : Fragment() {
 
     private var queryDataItem: QueryData? = null
 

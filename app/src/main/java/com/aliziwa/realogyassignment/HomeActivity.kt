@@ -11,7 +11,7 @@ import com.aliziwa.realogyassignment.databinding.ActivityItemDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ItemDetailHostActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
