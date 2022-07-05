@@ -30,7 +30,7 @@ There are two build variants: `Simpson Character` and `Wire Character`.
 
 ## Testing
 
-Adhering to the testing conventions, the project will include 70% Unit tests, 20% Integration tests and 10% End to End tests. These are the libraries used:
+These are the libraries used:
 
 * **Unit Tests**
 
@@ -48,10 +48,6 @@ Adhering to the testing conventions, the project will include 70% Unit tests, 20
 ## Serialization
 
 [Kotlinx serializer](https://github.com/Kotlin/kotlinx.serialization) was the preferred tool for our serialization. 
-
-* **Known issues**
-  * At the time we are adding it, KotlinX serializer has no support for serializing **_streams_** of data.
-  
   
 ## Documentation & Links
 * [Android Developer Docs](https://developer.android.com/docs)
