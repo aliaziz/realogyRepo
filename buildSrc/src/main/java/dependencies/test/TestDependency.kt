@@ -5,5 +5,6 @@ object TestDependency {
  const val JUNIT = "junit:junit:${TestDependencyVersion.JUNIT_VERSION}"
  const val MOCK_K = "io.mockk:mockk:${TestDependencyVersion.MOCK_K}"
  const val TRUTH ="com.google.truth:truth:${TestDependencyVersion.TRUTH}"
+ const val ANDROID_ARCH_X_CORE = "androidx.arch.core:core-testing:${TestDependencyVersion.ANDROIDX_ARCH}"
  const val ANDROIDX_JUNIT = "androidx.test.ext:junit:${TestDependencyVersion.ANDROIDX_JUNIT_VERSION}"
 }

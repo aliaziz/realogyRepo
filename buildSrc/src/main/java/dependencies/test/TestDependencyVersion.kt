@@ -6,4 +6,5 @@ object TestDependencyVersion {
     const val JUNIT_VERSION = "4.13.2"
     const val MOCK_K = "1.11.0"
     const val TRUTH = "0.42"
+    const val ANDROIDX_ARCH = "2.1.0"
 }

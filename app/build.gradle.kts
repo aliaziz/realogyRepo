@@ -84,6 +84,9 @@ dependencies {
     implementation(ModuleDependency.RXJAVA)
 
     testImplementation(TestDependency.JUNIT)
+    testImplementation(TestDependency.TRUTH)
+    testImplementation(TestDependency.MOCK_K)
+    testImplementation(TestDependency.ANDROID_ARCH_X_CORE)
 
     androidTestImplementation(TestDependency.ANDROIDX_JUNIT)
     androidTestImplementation(TestDependency.ESPRESSO)
