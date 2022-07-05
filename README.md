@@ -1,5 +1,5 @@
 # Assignment 
-[![Build Status](https://dev.azure.com/hpcodeway/Omen%20Command%20Center/_apis/build/status/OGH%20Mobile/OGH%20Android/OGH%20Android%20Debug?branchName=develop)](https://dev.azure.com/hpcodeway/Omen%20Command%20Center/_build/latest?definitionId=5654&branchName=develop)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/aliaziz/realogyRepo/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/aliaziz/realogyRepo/tree/master)
 
 
 ## Table of contents
